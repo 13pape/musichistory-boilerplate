@@ -1,0 +1,39 @@
+#body {
+	background-color: white;
+}
+
+#mainButton {
+	font-size: 40px;
+}
+
+.page--article {
+	border: 1px solid black;
+	float: left;
+}
+
+.nav {
+    background-color: #FFB4B0;
+    height: 40px;
+}
+
+.nav > li {
+    float: left;
+    list-style-type: none;
+    margin: 5px 15px 0 15px;
+    font-family: "Arial";
+    cursor: pointer;
+}
+
+.nav > li > a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav > li:hover {
+    color: white;
+}
+
+.link--google ~li {
+	font-size: 29px;
+}
+
