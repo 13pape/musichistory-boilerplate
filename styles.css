@@ -1,19 +1,27 @@
-#body {
-	background-color: white;
+.bodycolor {
+    padding: 0;
+    margin: 0;
+
 }
 
-#mainButton {
-	font-size: 40px;
-}
-
-.page--article {
-	border: 1px solid black;
-	float: left;
+.container {
+	background-color: #C0C0C0;
+    margin-left: 5%;
+    margin-right: 5%;
+    
 }
 
 .nav {
     background-color: #FFB4B0;
+    width: 80%;
+    max-width: 690px;
     height: 40px;
+    border: solid;
+    border-color: black;
+    text-align: right;
+    margin-left: 5%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .nav > li {
@@ -22,18 +30,90 @@
     margin: 5px 15px 0 15px;
     font-family: "Arial";
     cursor: pointer;
+    border-right: solid;
+    padding-right: 10px;
 }
 
 .nav > li > a {
-	color: white;
-	text-decoration: none;
+	color: black;
+	text-decoration: line;
+    text-align: left;
 }
 
 .nav > li:hover {
     color: white;
 }
 
-.link--google ~li {
-	font-size: 29px;
+
+.cuadro {
+    line-height:30px;
+    background-color: #4DD7FA;
+    border: solid;
+    height:450px;
+    width:170px;
+    float:left;
+    padding:10px; 
+    margin-left: 5%;
+    box-sizing: border-box;
 }
 
+.section {
+    width:150%;
+    height:450px;
+    max-width: 500px;
+    float:left;
+    padding:20px; 
+    border: solid;
+    background-color: #FEFAC0;
+    margin: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+.verticalLine {
+    border-left: thick solid #ff0000;
+}
+
+.click{ 
+    border: solid;
+    border-radius: 20%;
+    height: 5%;
+    width: 50%;
+    margin-left: 20%
+}
+
+.songoptions > li {
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0 10px;
+    font-family: "Arial";
+    cursor: pointer;
+    border-right: solid;
+    padding-right: 10px;
+}
+
+.songoptions > li > a {
+    color: black;
+    text-decoration: line;
+    text-align: left;
+}
+
+.songoptions > li:hover {
+    color: white;
+}
+
+.songsixetext {
+    font-size: 20px;
+    margin: 30px 10px 0 10px;
+    color: #785616;
+}
+.finalfooter {
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
