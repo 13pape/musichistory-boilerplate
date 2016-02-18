@@ -5,33 +5,11 @@
 .nav {
     background-color: #FFB4B0;
     margin-left: 5%;
-    width: 80%;
-    max-width: 690px;
     height: 60px;
     text-align: right;
     padding: 10px;
     box-sizing: border-box;
 }
-
-.nav > li {
-    float: left;
-    list-style-type: none;
-    margin: 5px 15px 0 15px;
-    font-family: "Arial";
-    cursor: pointer;
-    padding-right: 10px;
-}
-
-.nav > li > a {
-	color: black;
-	text-decoration: line;
-    text-align: left;
-}
-
-.nav > li:hover {
-    color: white;
-}
-
 
 .cuadro {
     line-height:30px;
@@ -41,37 +19,14 @@
     float:left;
     padding:10px; 
     margin-left: 5%;
-    box-sizing: border-box;
 }
 
 .section {
     width:150%;
-    height:450px;
-    max-width: 500px;
     float:left;
     padding:20px; 
     background-color: #FEFAC0;
     margin: 0 0 0 20px;
-    box-sizing: border-box;
-}
-
-.songoptions > li {
-    float: left;
-    list-style-type: none;
-    margin: 0 10px 0 10px;
-    font-family: "Arial";
-    cursor: pointer;
-    padding-right: 10px;
-}
-
-.songoptions > li > a {
-    color: black;
-    text-decoration: line;
-    text-align: left;
-}
-
-.songoptions > li:hover {
-    color: white;
 }
 
 .songsixetext {
@@ -79,6 +34,7 @@
     margin: 30px 10px 0 10px;
     color: #785616;
 }
+
 .finalfooter {
     text-align: right;
 }
@@ -89,4 +45,11 @@
 
 .visible {
     display: block;
+}
+
+.options {
+    width:150%;
+    margin-left: 5%;
+    padding:20px; 
+    background-color: #FEFAC0;
 }

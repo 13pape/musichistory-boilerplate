@@ -1,0 +1,30 @@
+{
+  "music_list_two": [
+    {
+      "song": "Bohemian Rhapsody",
+      "artist": "by Queen",
+      "album": "on the album A Night at the Opera"      
+    },
+    {
+      "song": "Stairway to Heaven",
+      "artist": "by Led Zeppelin",
+      "album": "on the album Led Zeppelin IV"
+      
+    },
+    {
+      "song": "Imagine",
+      "artist": "by John Lennon",
+      "album": "on the album Imagine"
+    },
+    {
+      "song": "Smells Like Teen Spirit",
+      "artist": "by Nirvana",
+      "album": "on the album Nevermind"
+    },
+    {
+      "song": "Hotel California",
+      "artist": "by Eagles",
+      "album": "on the album Hotel California"
+    }
+  ]
+}

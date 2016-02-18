@@ -1,35 +1,23 @@
-var songs = [];
+function populateSection(music) {
+	var songs = document.getElementById("songlist");
+		var outputMusic = "";
+		console.log("music", music);
 
-songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
-songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
-songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
-songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
-songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+		for (var i = 0; i < music.length; i++) {
+			var newSongs = music[i];
+			console.log("newSongs", newSongs);
+			//Let's build up the DOM
 
-songs.push("Just give me a reason > by Pink on the album The truth about love")
-songs.unshift("Try > by Pink on the album The truth about love")
+			outputMusic += `<div>`;
+			outputMusic += `<p>${newSongs.song}</p>`;
+			outputMusic += `<p>${newSongs.artist}</p>`;
+			outputMusic += `<p>${newSongs.album}</p>`;
+			outputMusic += "<button class='deleteSong'>Delete</button>";
+			outputMusic += `</div>`;
+		}
 
-console.log("songs", songs);
-
-var newsongs = [];
-
-for (i = 0; i < songs.length; i++) { 
-newsongs.push(songs[i].replace(">", "-"));
-}
-console.log(newsongs);  
-
-var songlistElement = document.getElementById("songlist");
-
-var songlist = songlistElement.innerHTML;
-
-console.log("songlist", songlist);
-
-for (var i = 0; i < newsongs.length; i++) {
-	songlist += "<p>" + newsongs[i] + "</p>";
+		console.log("songs", songs);
+		songs.innerHTML += outputMusic;
 }
 
-console.log("songlist", songlist);
-
-songlistElement.innerHTML = songlist;
-
-
+musicHistory.loadmusic(populateSection);

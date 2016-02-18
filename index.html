@@ -6,12 +6,10 @@
   <meta charset="utf-8">
   <title>Music History</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-
   <link rel="stylesheet" type="text/css" href="styles.css"></li>
 </head>
 
-<body class="bodycolor">
+<body>
   <div class="row col-xs-9 nav">
       <div class="col-xs-5" id="list_music">List Music</div>
       <div class="col-xs-4" id="add_music">Add Music</div>
@@ -51,36 +49,43 @@
         <input type="radio" name="genre" value="blues">Hip Hop<br>
       </form>
       <button type="button" class="btn btn-default">Filter</button>
+    </div>
+  <div id="songlist" class="section"></div>
+  <button id="moreMusic" class="btn btn-default section" type="submit">More</button>
 
 
-  </div>
 
-  <div id="songlist" class="section">
-  <p>
-  	
-  </p>
-  </div>
 </div>
 
 
 
-<div class="hidden col-xs-4" id="add_cuadro">
-  <label for="song-name">Song:</label>
-    <input type="text" name="song-name" id="song-name"><br>
+<div class="hidden row col-xs-9 options" id="add_cuadro">
+  <form class="form-inline col-xs-9">
+    <div class="form-group">
+      <label for="song-name">Song:</label>
+      <input type="text" class="form-control" id="song-name" placeholder="">
+    </div>
+      <br><br>
+    <div class="form-group">
+      <label for="artist-name">Artist:</label>
+      <input type="text" class="form-control" id="artist-name" placeholder="">
+    </div>
+      <br><br>
+    <div class="form-group">
+      <label for="album-name">Album:</label>
+      <input type="text" class="form-control" id="album-name" placeholder="">
+    </div>
+      <br><br>
+    
+  <button class="btn btn-default" type="submit">Add</button>
+    
+  <form>
 
-  <label for="artist-name">Artist:</label>
-    <input type="text" name="artist-name" id="artist-name"><br>
-
-  <label for="album-name">Album:</label>
-    <input type="text" name="album-name" id="album-name"><br>
-
-  <button id="button">Add</button>
-</div>
-
+</body>
 <footer class="finalfooter col-xs-12">&copy; 2016 Paloma Venegas</footer>
-</div>
-<script type="text/javascript" src="music.js"></script>
 <script type="text/javascript" src="add.js"></script>
+<script type="text/javascript" src="music.js"></script>
 <script type="text/javascript" src="list.js"></script>
+<script type="text/javascript" src="eventHandlers.js"></script>
 </body>
 </html>
