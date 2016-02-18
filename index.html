@@ -5,61 +5,53 @@
 
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
   <link rel="stylesheet" type="text/css" href="styles.css"></li>
 </head>
 
 <body class="bodycolor">
-<br>
-<div class="container">
-<br>
-<nav>
-    <ul class="nav">
-      <li><a href="#" id="list_music">List Music</a> </li>
-        <div class='vertial-line'></div>
-      <li><a href="#" id="add_music">Add Music</a> </li>
-    </ul>
-  </nav>
+  <div class="row col-xs-9 nav">
+      <div class="col-xs-5">List Music</div>
+      <div class="col-xs-4">Add Music</div>
+  </div>
   
-<div id="cuadro_mayor">
-  <div class="cuadro">
-  Song length:
-  	<form action="action_page.php" method="get">
-   	 <input type="range" name="points" min="0" max="10">
-  	</form>
+  <div class="col-xs-9" id="cuadro_mayor">
+    <div class="cuadro">
+      Song length:
+  	   <form action="action_page.php" method="get">
+   	    <input type="range" name="points" min="0" max="10">
+  	   </form>
+      Artist:
+      <select name="artist">
+        <option value="option">Option</option>
+        <option value="Pink">Pink</option>
+        <option value="Miley Cyrus">Miley Cyrus</option>
+        <option value="Katy Perry">Mercedes SLK</option>
+        <option value="Taylor Swift">Taylor Swift</option>
+        <option value="Sam Smith">Sam Smith</option>
+      </select>
+      Albums:
+      <select name="artist">
+        <option value="option">Option</option>
+        <option value="Pink">Pink</option>
+        <option value="Miley Cyrus">Miley Cyrus</option>
+        <option value="Katy Perry">Mercedes SLK</option>
+        <option value="Taylor Swift">Taylor Swift</option>
+        <option value="Sam Smith">Sam Smith</option>
+      </select>
+      Genre:
+      <form action="">
+        <input type="radio" name="genre" value="rock">Rock<br>
+        <input type="radio" name="genre" value="pop">Pop<br>
+        <input type="radio" name="genre" value="blues">Blues<br>
+        <input type="radio" name="genre" value="classical">Classical<br>
+        <input type="radio" name="genre" value="jazz">Jazz<br>
+        <input type="radio" name="genre" value="blues">Hip Hop<br>
+      </form>
+      <button type="button" class="btn btn-default">Filter</button>
 
-  Artist:
-   
-    <select name="artist">
-      <option value="option">Option</option>
-      <option value="Pink">Pink</option>
-      <option value="Miley Cyrus">Miley Cyrus</option>
-      <option value="Katy Perry">Mercedes SLK</option>
-      <option value="Taylor Swift">Taylor Swift</option>
-      <option value="Sam Smith">Sam Smith</option>
-    </select>
-
-  Albums:
-
-  <select name="artist">
-      <option value="option">Option</option>
-      <option value="Pink">Pink</option>
-      <option value="Miley Cyrus">Miley Cyrus</option>
-      <option value="Katy Perry">Mercedes SLK</option>
-      <option value="Taylor Swift">Taylor Swift</option>
-      <option value="Sam Smith">Sam Smith</option>
-    </select>
-
-  Genre:
-
-  <form action="">
-  <input type="radio" name="genre" value="rock">Rock<br>
-  <input type="radio" name="genre" value="pop">Pop<br>
-  <input type="radio" name="genre" value="blues">Blues<br>
-  <input type="radio" name="genre" value="classical">Classical<br>
-  <input type="radio" name="genre" value="jazz">Jazz<br>
-  <input type="radio" name="genre" value="blues">Hip Hop<br>
-  </form>
-  <button type="button" class="click">Filter</button>
 
   </div>
 
@@ -72,35 +64,20 @@
 
 
 
-
-
-
-
-<div class="hidden" id="add_cuadro">
+<div class="hidden col-xs-4" id="add_cuadro">
   <label for="song-name">Song:</label>
-  <input type="text" name="song-name" id="song-name"><br>
+    <input type="text" name="song-name" id="song-name"><br>
 
   <label for="artist-name">Artist:</label>
-  <input type="text" name="artist-name" id="artist-name"><br>
+    <input type="text" name="artist-name" id="artist-name"><br>
 
   <label for="album-name">Album:</label>
-  <input type="text" name="album-name" id="album-name"><br>
+    <input type="text" name="album-name" id="album-name"><br>
 
   <button id="button">Add</button>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<footer class="finalfooter">&copy; 2016 Paloma Venegas</footer>
+<footer class="finalfooter col-xs-12">&copy; 2016 Paloma Venegas</footer>
 </div>
 <script type="text/javascript" src="music.js"></script>
 <script type="text/javascript" src="add.js"></script>
