@@ -1,3 +1,5 @@
+"use strict";
+
 var addMusic = document.getElementById("add_music");
 addMusic.addEventListener("click", function() {
   

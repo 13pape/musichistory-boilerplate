@@ -1,38 +1,27 @@
-.containerC {
-	background-color: #C0C0C0;
+.bodyColor {
+    height: 100%; width: 100%; 
+    background-color: #333; 
+    color: #33FFFF; 
+    font-size: 16px; 
+    font-family: 'Lato', sans-serif;
+    margin: 0% 1% 1% 1%;
 }
 
-.nav {
-    background-color: #FFB4B0;
-    margin-left: 5%;
-    height: 60px;
-    text-align: right;
-    padding: 10px;
-    box-sizing: border-box;
+div .row .nav {
+    height: 200px;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
 }
 
-.cuadro {
-    line-height:30px;
-    background-color: #4DD7FA;
-    height:450px;
-    width:170px;
-    float:left;
-    padding:10px; 
-    margin-left: 5%;
+.deleteColor {
+    color: #003333;
 }
-
-.section {
-    width:150%;
-    float:left;
-    padding:20px; 
-    background-color: #FEFAC0;
-    margin: 0 0 0 20px;
-}
-
-.songsixetext {
-    font-size: 20px;
-    margin: 30px 10px 0 10px;
-    color: #785616;
+.logoColor {
+    background-color: yellow;
+    font-size: 30;
+    color: black;
 }
 
 .finalfooter {
@@ -47,9 +36,3 @@
     display: block;
 }
 
-.options {
-    width:150%;
-    margin-left: 5%;
-    padding:20px; 
-    background-color: #FEFAC0;
-}

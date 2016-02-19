@@ -1,5 +1,8 @@
+"use strict";
+
 function populateSection(music) {
-	var songs = document.getElementById("songlist");
+	// var songs = document.getElementById("songlist");
+	var songs = $("#songlist");
 		var outputMusic = "";
 		console.log("music", music);
 
@@ -12,12 +15,13 @@ function populateSection(music) {
 			outputMusic += `<p>${newSongs.song}</p>`;
 			outputMusic += `<p>${newSongs.artist}</p>`;
 			outputMusic += `<p>${newSongs.album}</p>`;
-			outputMusic += "<button class='deleteSong'>Delete</button>";
+			outputMusic += "<button class='btn btn-default deleteSong deleteColor'>Delete</button>";
 			outputMusic += `</div>`;
 		}
 
 		console.log("songs", songs);
-		songs.innerHTML += outputMusic;
+		// songs.innerHTML += outputMusic;
+		songs.append(outputMusic);
 }
 
 musicHistory.loadmusic(populateSection);
