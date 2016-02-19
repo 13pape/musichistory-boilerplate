@@ -1,7 +1,9 @@
 "use strict";
 
-function populateSection(music) {
+function populateSection(musicList) {
 	// var songs = document.getElementById("songlist");
+	console.log("musicList", musicList);
+	var music = musicList.music_list;
 	var songs = $("#songlist");
 		var outputMusic = "";
 		console.log("music", music);

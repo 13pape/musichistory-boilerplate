@@ -12,14 +12,14 @@
 
 <body class="bodyColor">
 
-  <div class="row nav">
-      <div class="col-md-4 logoColor" id="list_music">Music History</div>
+  <div class="row nav navbar navbar-inverse">
+      <div class="col-md-4" id="music">Music History</div>
       <div class="col-md-4" id="list_music">List Music</div>
       <div class="col-md-4" id="add_music">Add Music</div>
   </div>
 
-  <div class="row">
-    <div class="col-md-4" id="cuadro_mayor">
+  <div class="row" id="cuadro_mayor">
+    <div class="col-md-4" >
         Song length:
     	   <form action="action_page.php" method="get">
      	    <input type="range" name="points" min="0" max="5">
@@ -60,7 +60,9 @@
       <div id="songlist" class="section"></div>
       <div><button id="moreMusic" class="btn btn-default section" type="submit">More</button></div>
     </div>
+  </div>
 
+<div class="row">
     <div class="hidden col-md-12" id="add_cuadro">
       <form class="form-inline">
         <div class="form-group">
@@ -83,7 +85,7 @@
       </form>
     </div>
   </div>
-
+</div>
   <footer class="finalfooter">&copy; 2016 Paloma Venegas</footer>
 
 </body>

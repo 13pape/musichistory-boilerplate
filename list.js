@@ -1,25 +1,26 @@
 "use strict";
 
-var listMusic = document.getElementById("list_music");
-listMusic.addEventListener("click", function() {
+var listMusic = $("#list_music");
+listMusic.click(function(){
 	
-	var cuadroMayor = document.getElementById("cuadro_mayor");
-		cuadroMayor.classList.add("visible");
-		cuadroMayor.classList.remove("hidden");
+	var cuadroMayor = $("#cuadro_mayor");
+		cuadroMayor.addClass("visible");
+		cuadroMayor.removeClass("hidden");
 	
-	var cuadroMenor = document.getElementById("add_cuadro");
-		cuadroMenor.classList.add("hidden");
-		cuadroMenor.classList.remove("visible")
+	var cuadroMenor = $("#add_cuadro");
+		cuadroMenor.addClass("hidden");
+		cuadroMenor.removeClass("visible");
 });
 
+var addMusic = $("#add_music");
+addMusic.click(function() {
+  
+  var cuadroMayor = $("#cuadro_mayor");
+    cuadroMayor.addClass("hidden");
+    cuadroMayor.removeClass("visible");
 
-// listMusic.click(function() {
-	
-// 	var cuadroMayor = document.getElementById("cuadro_mayor");
-// 		cuadroMayor.classList.add("visible");
-// 		cuadroMayor.classList.remove("hidden");
-	
-// 	var cuadroMenor = document.getElementById("add_cuadro");
-// 		cuadroMenor.classList.add("hidden");
-// 		cuadroMenor.classList.remove("visible")
-// })
+  var cuadroMenor = $("#add_cuadro");
+    cuadroMenor.addClass("visible");
+    cuadroMenor.removeClass("hidden");
+});
+
