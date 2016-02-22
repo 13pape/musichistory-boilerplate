@@ -23,4 +23,3 @@ addMusic.click(function() {
     cuadroMenor.addClass("visible");
     cuadroMenor.removeClass("hidden");
 });
-
