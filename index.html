@@ -7,16 +7,31 @@
   <title>Music History</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="styles.css"></li>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"></li>
 </head>
 
 <body class="bodyColor">
 
   <div class="row nav navbar navbar-inverse">
-      <div class="col-md-4" id="music">Music History</div>
-      <div class="col-md-4" id="list_music">List Music</div>
-      <div class="col-md-4" id="add_music">Add Music</div>
+      <div class="col-md-3" id="music">Music History</div>
+      <div class="col-md-3" id="list_music">List Music</div>
+      <div class="col-md-3" id="add_music">Add Music</div>
+      <div class="col-md-3" id="log_out">Log Out</div>
   </div>
+
+<div class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="email" class="form-control" id="emailHolder" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="pswHolder" placeholder="Password">
+  </div>
+  <button class="btn btn-default" id="registerButton">Register</button>
+  <button class="btn btn-default" id="signInButton">Sign in</button>
+</div>
+
 
   <div class="row" id="cuadro_mayor">
     <div class="col-md-4" >
@@ -93,6 +108,9 @@
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+<script type="text/javascript" src="account.js"></script>
 <script type="text/javascript" src="add.js"></script>
 <script type="text/javascript" src="music.js"></script>
 <script type="text/javascript" src="list.js"></script>

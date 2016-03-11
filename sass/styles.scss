@@ -1,7 +1,10 @@
+$nav_color: #333;
+$back_color: #33FFFF;
+
 .bodyColor {
     height: 100%; width: 100%; 
-    background-color: #333; 
-    color: #33FFFF; 
+    background-color: $nav_color; 
+    color: $back_color; 
     font-size: 16px; 
     font-family: 'Lato', sans-serif;
     margin: 0% 1% 1% 1%;

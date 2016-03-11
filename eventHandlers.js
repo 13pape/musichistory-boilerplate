@@ -8,7 +8,7 @@ $("#moreMusic").click(function(){
   	musicHistory.loadMoreMusic(populateSection);
   });
 
-$("#songlist").on('click', "button[class='btn btn-default deleteSong deleteColor']", function(){
+$(document).on('click', "button[class='btn btn-default deleteSong deleteColor']", function(){
 	$(this).parents('.song').remove();
 })
 

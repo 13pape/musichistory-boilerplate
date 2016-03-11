@@ -1,40 +1,39 @@
 {
-  "music_list": [
-    {
+  "music_list": {
+    "Legs": {
       "song": "Legs",
       "artist": "by Z*ZTop",
       "album": "on the album Eliminator"      
     },
-    {
+    "TheLogicalSong": {
       "song": "The Logical Song",
       "artist": "by Supertr@amp",
-      "album": "on the album Breakfast in America"
-      
+      "album": "on the album Breakfast in America"   
     },
-    {
+    "AnotherBrickintheWall":{
       "song": "Another Brick in the Wall",
       "artist": "by Pink Floyd",
       "album": "on the album The Wall"
     },
-    {
+    "WelcometotheJungle":{
       "song": "Welcome to the Jungle",
       "artist": "by Guns & Roses",
       "album": "on the album Appetite for Destruction"
     },
-    {
+    "Ironic":{
       "song": "Ironic",
       "artist": "by Alanis Morisette",
       "album": "on the album Jagged Little Pill"
     }, 
-    {
+    "Justgivemeareason":{
       "song": "Just give me a reason",
       "artist": "by Pink",
       "album": "on the album The truth about love"
     }, 
-    {
+    "Try":{
       "song": "Try",
       "artist": "by Pink",
       "album": "on the album The truth about love"
     }
-  ]
+  }
 }
